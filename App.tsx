@@ -10,7 +10,6 @@ import AnalyticsDashboard from './components/AnalyticsDashboard';
 import AuthModal from './components/AuthModal';
 import ProfileModal from './components/ProfileModal';
 import DailyInsight from './components/DailyInsight';
-import Logo from './components/Logo';
 import { Language, translations } from './translations';
 import { supabase } from './services/supabaseClient';
 import { getMotivationalInsight } from './services/geminiService';
@@ -470,8 +469,11 @@ const App: React.FC = () => {
             </button>
         </div>
 
-        <div className="mb-8 scale-125">
-           <Logo />
+        <div className="mb-8 flex flex-col items-center">
+           <div className="w-20 h-20 bg-indigo-600 rounded-3xl flex items-center justify-center shadow-2xl shadow-indigo-500/30 mb-6 rotate-3">
+              <CheckSquare className="w-10 h-10 text-white" />
+           </div>
+           <h2 className="text-3xl font-bold text-white tracking-tight">Iterabits</h2>
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-purple-200 to-slate-200 mb-6 max-w-2xl">
@@ -508,8 +510,11 @@ const App: React.FC = () => {
       {/* Top Bar */}
       <div className="sticky top-0 z-30 px-4 py-4 backdrop-blur-xl bg-black/20 border-b border-white/5">
         <div className="max-w-2xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-3">
-             <Logo className="" />
+          <div className="flex items-center gap-2.5">
+             <div className="bg-indigo-600 p-1.5 rounded-lg shadow-lg shadow-indigo-500/20">
+                <CheckSquare className="w-5 h-5 text-white" />
+             </div>
+             <span className="font-bold text-xl tracking-tight text-slate-100 hidden sm:block">Iterabits</span>
           </div>
           
           <div className="flex items-center gap-2">
