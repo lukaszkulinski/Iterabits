@@ -1,10 +1,10 @@
-const CACHE_NAME = 'iterabits-tracker-v1';
+const CACHE_NAME = 'iterabits-tracker-v2';
 const ASSETS_TO_CACHE = [
-  './',
-  './index.html',
-  './logo.svg',
-  './name.svg',
-  './manifest.json'
+  '/',
+  '/index.html',
+  '/logo.svg',
+  '/name.svg',
+  '/manifest.json'
 ];
 
 // Install event - cache core assets
