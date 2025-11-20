@@ -3,7 +3,7 @@ export type Language = 'en' | 'pl';
 
 export const translations = {
   en: {
-    appTitle: 'Bloom',
+    appTitle: 'Iterabits',
     newHabit: 'New Habit',
     editHabit: 'Edit Habit',
     habits: 'Habits',
@@ -66,7 +66,7 @@ export const translations = {
     cat_other: 'Other',
   },
   pl: {
-    appTitle: 'Bloom',
+    appTitle: 'Iterabits',
     newHabit: 'Nowy nawyk',
     editHabit: 'Edytuj nawyk',
     habits: 'Nawyki',

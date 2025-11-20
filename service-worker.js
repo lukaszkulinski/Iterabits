@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bloom-tracker-v1';
+const CACHE_NAME = 'iterabits-tracker-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

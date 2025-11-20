@@ -18,7 +18,7 @@ import { getMotivationalInsight } from './services/geminiService';
 const App: React.FC = () => {
   // State
   const [language, setLanguage] = useState<Language>(() => {
-    const saved = localStorage.getItem('bloom_language');
+    const saved = localStorage.getItem('iterabits_language');
     return (saved === 'en' ? 'en' : 'pl');
   });
 
@@ -216,7 +216,7 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem('bloom_language', language);
+    localStorage.setItem('iterabits_language', language);
   }, [language]);
 
   // --- HANDLERS ---
